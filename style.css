@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 36, 75);
+    color: #ffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/*Barra*/
+.header {
+    width: 100%;
+    background-color: rgb(24, 24, 51);
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.barra-navegacion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: gray;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: #fff;
+}
+
+.nav-links a.active {
+    color: #fff;
+}
+
+.boton-cv {
+    background-color: rgb(42, 84, 106);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.boton-cv:hover {
+    background-color: #2563eb;
+}
+
+/*DESCRIPCION*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+    gap: 3rem;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-titulo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    animation: aparecer 1s ease-out;
+}
+
+.hero-titulo .highlight {
+    color: rgb(7, 7, 34);
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-subtitulo {
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.hero-descripcion {
+    color: gray;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.btn-proyectos {
+    background-color: rgb(62, 62, 171);
+    color: #fff;
+}
+
+.btn-proyectos:hover {
+    border-color: white;
+    background-color: #2563eb;
+}
+
+.btn-contacto {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #1f2937;
+}
+
+.btn-contacto:hover {
+    border-color: gray;
+    background-color: #2563eb;
+}
+
+/*FOTO*/
+.image-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.35);
+}
+
+.perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/*PROYECTOS*/
+.section-proyectos{
+    padding: 3rem 0 6rem 0;
+    margin-top: 60px;
+}
+
+.titulo-proyectos{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.logo-proyectos{
+    font-size: 1.5rem;
+}
+
+.proyectos-title{
+    font-size: 1.75rem;
+    font-weight: 750;
+    color: #fff;
+}
+
+/*3 COLUMNAS*/
+.proyectos-destacados{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5ren;
+    scroll-margin-top: 90px;
+}
+
+.tarjeta-proyecto{
+    background-color: #131b2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.tarjeta{
+    width: 100%;
+    height: 180px;
+    background-color: #0d1322;
+    overflow: hidden;
+    border-bottom: 1px solid #1f2937;
+
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-proyecto:hover .tarjeta img{
+    transform: scale(1.04);
+}
+
+.tarjeta-texto{
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.tarjeta-titulo{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tarjeta-descripcion{
+    font-size: 0.88rem;
+    color: gray;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+}
+
+.tarjeta-etiqueta{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.tag{
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    border: 1px solid transparent;
+}
+
+.tag-html{
+    background-color: rgba(240, 89, 19, 0.699);
+    color: #fff;
+    border-color: rgba(240, 89, 19, 0.800);
+}
+
+.tag-css{
+    background-color: rgb(24, 158, 207);
+    color: #fff;
+    border-color: rgba(24, 16, 230);
+}
+
+.tag-js{
+    background-color: rgb(236, 201, 74);
+    color: #fff;
+    border-color: rgba(236, 160, 80);
+}
+
+.section-habilidades{
+    padding: 3rem;
+}
+
+.section-principal{
+    margin-bottom: 2rem;
+}
+
+.section-titulo{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*HABILIDADES*/
+.seccion-titulo{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: gray;
+    text-align: center;
+}
+.habilidades-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.25rem;
+}
+
+.tarjeta-habilidades{
+    background-color: #131b2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 1.25rem;
+    text-align: center;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.nombre{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+.tarjeta-habilidades:hover{
+    transform: translateY(-3px);
+    border-color: #3b82f6;
+}
+
+/*CONTACTO*/
+.tarjeta-contacto{
+    background-color: #131b2e;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.contacto.texto{
+    color: gray;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.enlaces-contacto{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

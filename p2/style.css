@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    color: #222;
+}
+
+.hoja-vida {
+    width: 1100px;
+    max-width: 95%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 280px 1fr 280px;
+    grid-template-rows: 150px auto;
+    grid-template-areas:
+        "encabezado encabezado encabezado"
+        "lateral contenido derecha";
+
+    background-color: white;
+    height: auto;
+    min-height: 100vh;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.encabezado {
+    grid-area: encabezado;
+    background-color: #102f4a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 7px solid #d5d5d5;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.titulo p {
+    margin: 5px 0 0;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.lateral {
+    grid-area: lateral;
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #e5e9ed
+    );
+    padding: 25px;
+}
+
+.foto-contenedor {
+    width: 155px;
+    height: 155px;
+    margin: -90px auto 15px;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid #d0d0d0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.foto-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.lateral h2 {
+    text-align: center;
+    margin: 10px 0 3px;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.profesion {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.informacion {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+}
+
+.icono {
+    width: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.habilidades-lateral {
+    margin-top: 35px;
+}
+
+.habilidades-lateral h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: normal;
+    border-bottom: 1px solid #555;
+    padding-bottom: 7px;
+}
+
+.habilidades-lateral ul {
+    padding-left: 25px;
+}
+
+.habilidades-lateral li {
+    margin: 18px 0;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.contenido {
+    grid-area: contenido;
+    padding: 25px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.seccion {
+    margin-bottom: 25px;
+}
+
+.seccion > h2 {
+    margin: 0 0 10px;
+    padding: 6px 10px;
+    background: linear-gradient(
+        to right,
+        #444,
+        #555
+    );
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.seccion > p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 8px 5px;
+}
+
+.experiencia {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+.fecha {
+    flex: 0 0 55px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.descripcion {
+    flex: 1;
+}
+
+.descripcion h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.empresa {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.descripcion ul {
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.descripcion li {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 25px;
+}
+
+.nombre-habilidad {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.barra {
+    width: 100%;
+    height: 7px;
+    background-color: #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progreso {
+    height: 100%;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 85%;
+}
+
+.javascript {
+    width: 70%;
+}
+
+.python {
+    width: 65%;
+}
+
+.idiomas {
+    display: flex;
+    gap: 100px;
+    font-size: 14px;
+}
+
+.idiomas p {
+    margin: 3px 0;
+}
+
+.derecha {
+    grid-area: derecha;
+    padding: 20px 15px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #f0f0f0
+    );
+}
+
+.derecha > h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+
+.proyecto {
+    background-color: white;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
+}
+
+.proyecto h3 {
+    margin: 0 0 7px;
+    font-size: 18px;
+}
+
+.proyecto p {
+    margin: 5px 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.proyecto ul {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+.proyecto li {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.descarga {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.descarga h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.boton {
+    display: block;
+    padding: 12px;
+    background-color: #102f4a;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #1d4c70;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+
+    .hoja-vida {
+        width: 95%;
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "encabezado encabezado"
+            "lateral contenido"
+            "derecha derecha";
+    }
+
+    .derecha {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .derecha > h2 {
+        grid-column: 1 / -1;
+    }
+
+    .descarga {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .hoja-vida {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "encabezado"
+            "lateral"
+            "contenido"
+            "derecha";
+    }
+
+    .titulo h1 {
+        font-size: 35px;
+    }
+
+    .titulo p {
+        font-size: 18px;
+    }
+
+    .lateral {
+        padding-top: 70px;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .derecha {
+        display: block;
+    }
+
+    .experiencia {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+}
