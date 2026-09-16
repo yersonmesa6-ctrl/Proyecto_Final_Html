@@ -3,193 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Plantas para tu hogar</title>
+    <!-- Iconos de FontAwesome para el carrito, teléfono, email, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAV BAR -->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"> 📷 Albúm</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Albumes</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
+<!-- TEXTO ANUNCIO -->
 
-
-
-        <!--BANNER -->
-        <div class="card text-center mb-5">
-            <div class="card-header">
-                FEATURED
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Album example</h5>
-                <p class="card-text">Something short and leading about the collection below-its contents, the creator, etc. 
-                Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-                <button type="button" class="btn btn-primary btn-sm">Main call to action</button>
-                <button type="button" class="btn btn-secondary btn-sm">Secondary action</button>
-            </div>
-        </div>
-
-        <!--TARJETAS -->
-        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-            
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdBNM0T4UbOzXI-kj3FMIOzR9Q1lxdfgO40qTboaOuCs-3YJJbBendwqfF&s=10" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRD4KnYzVUdRWi0vSyhXGYzXL74oNUjOURA7XdzUDMk5dJW6I0dBCUEVQ&s=10" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8EP-RIoLrTeGmy4ZW4fRkquACu2fdaH85x-qGnVtvMQ&s=10" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCg9BVblLyEId8wKna7sIZjFMvEizIJFBNJMM9T0F4LQ&s=10" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIuDw9yj8m9z2RIzuXHKHwnnTM0qdU7kkLtYWLmJVLqQ&s=10" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCZhJwwBF0xKqr2ReDpBJh_IkwhLtp4Z66cWDdL5NysbAvzIKzDiNpmBCC&s=10" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://dynamicsolutions.com.co/wp-content/uploads/2025/07/software-empresarial.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg74IewjMxSNlnj-ELM-vAdRxDwCSjpoZuqzbp1vKga5PCcLLIRQg9tpo&s=10" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHalIh-kJsNktsLDZtcrkcKm5TsJxTR5DKMIxH50G9AJnyzUJmKznYfkJU&s=10" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div class="top-bar">
+        <i class="fa-solid fa-truck"></i> Envío gratis en pedidos superiores $150.000 COP.
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Navegación Principal -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-leaf"></i> Verde Vida
+            </a>
+            <nav class="nav">
+                <a href="#" class="active">Inicio</a>
+                <a href="#">Tienda</a>
+                <a href="#">Cuidados</a>
+                <a href="#">Blog</a>
+            </nav>
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Plantas que <br>alegran tu hogar</h1>
+                <p>Descubre nuestra selección de plantas de interior para cada rincón de tu casa.</p>
+                <a href="#" class="btn btn-primary">Comprar ahora</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGflamdin0MYjMGt_XEu2YprSkryajIn4dfENsKmq2ew&s=10https://media.istockphoto.com/id/690357282/es/foto/mujer-elige-petunia-flores-en-la-tienda-de-vivero-de-planta-de-jard%C3%ADn.jpg?s=612x612&w=0&k=20&c=I-YI829gQNBl4kDbP-ncziFnaimtLJqlg7Q5y_jbuYk=" alt="Monstera en maceta">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lo Más vendido -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Más vendidos</h2>
+
+            <div class="product-grid">
+                <!-- Tarjeta 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-K9xkvioQkOBS7j4LN2OytmNroPMhJfsQxTpIbz5Cw&s=10" alt="Monstera Deliciosa">
+                    </div>
+                    <div class="product-info">
+                        <h3>Orquidea</h3>
+                        <div class="product-bottom">
+                            <span class="price">$195.000</span>
+                            <button class="btn btn-add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCv_crWbVJAyeq0CDsVgutg1Syg77OaIr4GpBjVg_yUQ&s=10" alt="Ficus Elastica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Suculentas</h3>
+                        <div class="product-bottom">
+                            <span class="price">$15.000</span>
+                            <button class="btn btn-add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkK3MvyNmnWy3h1HQmR3XMJZxwbFEjFs4Minw_4cyJqg&s=10" alt="Cactus Echinopsis">
+                    </div>
+                    <div class="product-info">
+                        <h3>Palma Areca</h3>
+                        <div class="product-bottom">
+                            <span class="price">$79.000</span>
+                            <button class="btn btn-add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTviDekwCnh2TsrxrAOAk-4knoNSvKvlQSeJuIUzI1MSg&s=10" alt="Poto">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bambú Trenzado</h3>
+                        <div class="product-bottom">
+                            <span class="price">$100.000</span>
+                            <button class="btn btn-add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-leaf"></i> VerdeVida
+                </a>
+                <p>Plantas de interior seleccionadas con amor para transformar tu hogar en un espacio más verde y saludable.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Cuidados</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Envíos y devoluciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-regular fa-envelope"></i> hola@verdevida.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +57 312-456-7890</li>
+                    <li><i class="fa-solid fa-location-dot"></i>  Calle 72 # 10-34 Bógota D.C</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 VerdeVida. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

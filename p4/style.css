@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+body {
+    background-color: #f8f9fa; /* Fondo ligeramente gris para contrastar con las tarjetas blancas */
+    color: #111827;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e7eb; /* Se especificó un color de borde válido */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.barra-navegacion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.logo {
+    color: #111827;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    font-family: Georgia, serif; /* Estilo serifa similar a la imagen */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #6b7280;
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #111827; /* Cambia a negro al pasar el cursor sobre un enlace */
+}
+
+/* HERO / PARTE PRINCIPAL */
+.hero {
+    display: flex;
+    flex-direction: column; /* Permite apilar título y botones */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjZ6Z7OH43VJEGauFwEiVq8ztQZ0RRKftuYLOl9T1UMA&s=10");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 1rem;
+    min-height: 400px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-subtitulo {
+    font-size: 2.75rem;
+    font-weight: 400;
+    font-family: Georgia, serif;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-destinos {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-destinos:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #111827;
+}
+
+/* ARTÍCULOS / TARJETAS */
+.section-articulos {
+    padding: 3rem 0 6rem 0;
+}
+
+.titulo-tarjetas {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem; /* Se corrigió valor inválido 'center' */
+}
+
+.articulos-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Georgia, serif;
+    color: #111827;
+}
+
+.ultimos-articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas en pantallas grandes */
+    gap: 1.5rem;
+}
+
+/* Tarjeta contenedora */
+.tarjeta-articulo {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-articulo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Contenedor e imagen */
+.tarjeta-imagen {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-articulo:hover .tarjeta-imagen img {
+    transform: scale(1.03);
+}
+
+/* Contenido de texto */
+.tarjeta-texto {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tarjeta-categoria {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+}
+
+.tarjeta-titulo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.tarjeta-descripcion {
+    font-size: 0.85rem;
+    color: #6b7280;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.tarjeta-link {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-pag {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center; /* Centra el texto de los derechos reservados */
+}
+
+.footer-pag p {
+    font-size: 0.8rem;
+    color: #9ca3af; /* Color gris suave como en el diseño */
+    font-weight: 400;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .ultimos-articulos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* NAVEGACIÓN RESPONSIVA (MÓVILES Y TABLETS) */
+@media (max-width: 768px) {
+    .barra-navegacion {
+        flex-direction: column; /* Apila el logo y los enlaces verticalmente */
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem; /* Reduce la distancia entre cada enlace */
+        flex-wrap: wrap; /* Permite que los enlaces pasen a otra línea si no caben */
+        justify-content: center; /* Centra los enlaces en la pantalla */
+    }
+
+    .nav-links a {
+        font-size: 0.85rem; /* Ajusta un poco el tamaño del texto para pantallas pequeñas */
+    }
+}
